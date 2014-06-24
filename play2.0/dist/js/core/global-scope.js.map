@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "global-scope.js",
+  "sourceRoot": "../../../coffee/core/",
+  "sources": [
+    "global-scope.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;;;;;;;CAAA;AAQA,CARA,EAQO,GAAP,GAAO;CAEL,KAAA,KAAA;SAAM;CAES,EAAA,CAAA,iBAAA;CACX,CAAA,CAAS,CAAR,CAAD,CAAA;CADF,IAAa;;CAAb,CAGY,CAAZ,CAAK,CAAA,IAAC;CACG,EAAQ,CAAR,EAAA,OAAP;CAJF,IAGK;;CAHL,EAOU,KAAV,CAAU;CAAO,GAAA,SAAD;CAPhB,IAOU;;CAPV;;CAJG;CAAA"
+}
