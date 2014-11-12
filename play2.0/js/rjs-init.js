@@ -33,7 +33,7 @@ requirejs.config({
   shim: {
     'bowser': {
       deps: [],
-      exports: 'createBowser'
+      exports: 'bowser'
     },
     'buzz': {
       deps: [],

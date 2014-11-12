@@ -58,7 +58,7 @@ look for all "liveCodeLabCoreInstance" occurrences and see which of its
 children are accessed.
 */
 
-define(['core/animation-loop', 'core/background-painter', 'core/blend-controls', 'core/code-compiler', 'core/colour-functions', 'core/colour-literals', 'core/graphics-commands', 'core/lights-commands', 'core/matrix-commands', 'core/program-runner', 'core/renderer', 'core/threejs-system', 'core/time-keeper', 'core/global-scope', 'sound/samplebank', 'sound/sound-system', 'bowser', 'buzz', 'lowLag', 'threejs', 'Three.Detector', 'Three.ShaderExtras', 'Three.EffectComposer', 'Three.MaskPass', 'Three.RenderPass', 'Three.SavePass', 'Three.ShaderPass'], function(AnimationLoop, BackgroundPainter, BlendControls, CodeCompiler, ColourFunctions, ColourLiterals, GraphicsCommands, LightsCommands, MatrixCommands, ProgramRunner, Renderer, ThreeJsSystem, TimeKeeper, GlobalScope, SampleBank, SoundSystem, createBowser, buzz, lowLag, THREE, Detector) {
+define(['core/animation-loop', 'core/background-painter', 'core/blend-controls', 'core/code-compiler', 'core/colour-functions', 'core/colour-literals', 'core/graphics-commands', 'core/lights-commands', 'core/matrix-commands', 'core/program-runner', 'core/renderer', 'core/threejs-system', 'core/time-keeper', 'core/global-scope', 'sound/samplebank', 'sound/sound-system', 'bowser', 'buzz', 'lowLag', 'threejs', 'Three.Detector', 'Three.ShaderExtras', 'Three.EffectComposer', 'Three.MaskPass', 'Three.RenderPass', 'Three.SavePass', 'Three.ShaderPass'], function(AnimationLoop, BackgroundPainter, BlendControls, CodeCompiler, ColourFunctions, ColourLiterals, GraphicsCommands, LightsCommands, MatrixCommands, ProgramRunner, Renderer, ThreeJsSystem, TimeKeeper, GlobalScope, SampleBank, SoundSystem, bowser, buzz, lowLag, THREE, Detector) {
   var LiveCodeLabCore;
   LiveCodeLabCore = (function() {
     function LiveCodeLabCore(paramsObject) {
@@ -69,7 +69,7 @@ define(['core/animation-loop', 'core/background-painter', 'core/blend-controls',
       this.colourFunctions = new ColourFunctions();
       this.colourLiterals = new ColourLiterals();
       this.renderer = new Renderer(this);
-      this.soundSystem = new SoundSystem(this.paramsObject.eventRouter, this.timeKeeper, buzz, lowLag, createBowser(), new SampleBank(buzz));
+      this.soundSystem = new SoundSystem(this.paramsObject.eventRouter, this.timeKeeper, buzz, lowLag, bowser, new SampleBank(buzz));
       this.backgroundPainter = new BackgroundPainter(this.paramsObject.canvasForBackground, this, this.colourLiterals);
       this.drawFunctionRunner = new ProgramRunner(this.paramsObject.eventRouter, this);
       this.codeCompiler = new CodeCompiler(this.paramsObject.eventRouter, this);
