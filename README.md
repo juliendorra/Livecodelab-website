@@ -11,7 +11,7 @@ It contains a build obtained from the sources in the livecodelab repo (where the
 How do I serve this?
 ====================
 
-Any webserver is good. The classic SimpleHTTPServer works fine
+Any webserver is good. The classic SimpleHTTPServer works fine.
 
 Is there a build process for this?
 ====================
